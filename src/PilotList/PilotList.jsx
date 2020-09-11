@@ -3,7 +3,7 @@ import { getPilots } from '../services/api-calls'
 
 class PilotList extends Component {
     state = { 
-        pilots: [],
+        pilots: this.props.location.state.starshipDetails.pilots
      }
 
     async componentDidMount() {

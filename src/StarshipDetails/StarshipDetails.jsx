@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { getStarshipDetails } from '../services/api-calls'
-import PilotList from '../Pilots/PilotList'
+import PilotList from '../PilotList/PilotList'
 
 class StarshipDetails extends Component {
     state = { 
@@ -23,7 +23,7 @@ class StarshipDetails extends Component {
             <h3>{starshipDetails.model}</h3>
             <a href="/">RETURN</a>
             <PilotList 
-                starship={starshipDetails}/>
+                state={starshipDetails}/>
             </>
          );
     }
